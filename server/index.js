@@ -5,7 +5,7 @@ dotenv.config();
 // Import dependencies
 const express = require('express');
 const cors = require('cors');
-const router = require('./routes')
+const router = require('./routes/route')
 
 // Initialize app
 const app = express();
@@ -16,10 +16,10 @@ app.use(cors());
 app.use(express.json());// Optional: enables JSON body parsing
 app.use(router)
 
-// Routes
-app.get('/', (req, res) => {
-  res.send('✅ Server is available');
-});
+// // Routes
+// app.get('/', (req, res) => {
+//   res.send('✅ Server is available');
+// });
 
 // Start server
 app.listen(port, () => {

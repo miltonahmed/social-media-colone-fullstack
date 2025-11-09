@@ -1,9 +1,8 @@
 const express = require("express")
 const router = express.Router()
 
-
 router.get("/", () => {
-  console.log('This is from api route')
+  console.log('This is from api auth')
 })
 
-module.exports= router
+module.exports = router
