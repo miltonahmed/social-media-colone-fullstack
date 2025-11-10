@@ -21,8 +21,5 @@ app.use(express.json());// Optional: enables JSON body parsing
 app.use(router)
 
 
-
 // Start server
-app.listen(port, () => {
-  console.log(`🚀 Server running on port ${port}`);
-});
+app.listen(port);
